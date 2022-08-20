@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            div
+            {
+                border: blue;
+                border-radius: 10px;
+                border-style: solid;
+                width: fit-content;
+            }
+        </style>
+        <script>
+            function showCheckbox()
+            {
+                var isClicked = document.getElementById("i1");
+
+                if(isClicked.checked==true)
+                {
+                    document.getElementById("d1").style.display="block";
+                }
+                else
+                {
+                    document.getElementById("d1").style.display="none";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Checkbox : <input type="checkbox" id="i1" onclick="showCheckbox()" />
+        <div id="d1" style="display: none">
+            <br>
+            <textarea placeholder="Enter Text here"></textarea>
+            <br><br>
+            <input type="button" value="Submit" />
+            <br><br>
+        </div>
+    </body>
+</html>
